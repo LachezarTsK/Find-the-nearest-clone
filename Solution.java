@@ -28,7 +28,8 @@ public class Solution {
 	 * Searches for a route from the start node to the nearest node with the same
 	 * color.
 	 * 
-	 * @return minimum distance from current start node.
+	 * @return Minimum distance from current start node, if there is a route.
+	 *         Otherwise Integer.MAX_VALUE.
 	 */
 	private static int shortestReach(int startNodeNumber, int colorToBeChecked, int[] allColors) {
 
@@ -68,7 +69,7 @@ public class Solution {
 	 * Checks for the shortest route between any two nodes with the color to be
 	 * analyzed.
 	 * 
-	 * @return minimum distance, if there is a route. Otherwise -1;
+	 * @return Minimum distance, if there is a route. Otherwise -1;
 	 */
 	private static int checkNodesForColorToBeAnalyzed(int colorToBeAnalyzed, int[] collor) {
 		int minimum = Integer.MAX_VALUE;
